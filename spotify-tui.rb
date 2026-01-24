@@ -15,7 +15,6 @@ class SpotifyTui < Formula
 
     def install
       bin.install "spotify-tui"
-      bin.install_symlink "spotify-tui" => "spot"
     end
   end
   if Hardware::CPU.arm?
@@ -24,11 +23,10 @@ class SpotifyTui < Formula
 
     def install
       bin.install "spotify-tui"
-      bin.install_symlink "spotify-tui" => "spot"
     end
   end
 
   test do
-    system "#{bin}/spot", "--version"
+    system "#{bin}/spotify-tui", "--version"
   end
 end
