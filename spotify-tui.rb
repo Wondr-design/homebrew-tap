@@ -5,21 +5,21 @@
 class SpotifyTui < Formula
   desc "Brutalist terminal UI for Spotify on macOS"
   homepage "https://github.com/Wondr-design/spotify"
-  version "0.2.4"
+  version "0.2.5"
   license "MIT"
   depends_on :macos
 
   if Hardware::CPU.intel?
-    url "https://github.com/Wondr-design/spotify/releases/download/v0.2.4/spotify-tui_darwin_amd64.tar.gz"
-    sha256 "67c9d31a398e11c89299428cb7d610f6ad3d3080e28f52c5b1d35748ec8bd659"
+    url "https://github.com/Wondr-design/spotify/releases/download/v0.2.5/spotify-tui_darwin_amd64.tar.gz"
+    sha256 "b9ca7e0c05f5608036d79023a855b60b647ba783f3fd21fefb75f468119b54f7"
 
     def install
       bin.install "spotify-tui"
     end
   end
   if Hardware::CPU.arm?
-    url "https://github.com/Wondr-design/spotify/releases/download/v0.2.4/spotify-tui_darwin_arm64.tar.gz"
-    sha256 "b8ac7b2c5d2fdc7dcc4a1a4511bb96a4f89041f58a99b69ae56ba729fca05c5f"
+    url "https://github.com/Wondr-design/spotify/releases/download/v0.2.5/spotify-tui_darwin_arm64.tar.gz"
+    sha256 "5f0b0c85f2813555537faca1a6561fdc261294e4f81c36c1841de353dafbc65d"
 
     def install
       bin.install "spotify-tui"
