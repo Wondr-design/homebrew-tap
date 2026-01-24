@@ -5,28 +5,30 @@
 class SpotifyTui < Formula
   desc "Brutalist terminal UI for Spotify on macOS"
   homepage "https://github.com/Wondr-design/spotify"
-  version "0.2.5"
+  version "0.2.6"
   license "MIT"
   depends_on :macos
 
   if Hardware::CPU.intel?
-    url "https://github.com/Wondr-design/spotify/releases/download/v0.2.5/spotify-tui_darwin_amd64.tar.gz"
-    sha256 "b9ca7e0c05f5608036d79023a855b60b647ba783f3fd21fefb75f468119b54f7"
+    url "https://github.com/Wondr-design/spotify/releases/download/v0.2.6/spotify-tui_darwin_amd64.tar.gz"
+    sha256 "3e8e3cdbc715c26b2a899f833b0bd9d07785984162005bec116872a92fbbb642"
 
     def install
       bin.install "spotify-tui"
+      bin.install_symlink "spotify-tui" => "spot"
     end
   end
   if Hardware::CPU.arm?
-    url "https://github.com/Wondr-design/spotify/releases/download/v0.2.5/spotify-tui_darwin_arm64.tar.gz"
-    sha256 "5f0b0c85f2813555537faca1a6561fdc261294e4f81c36c1841de353dafbc65d"
+    url "https://github.com/Wondr-design/spotify/releases/download/v0.2.6/spotify-tui_darwin_arm64.tar.gz"
+    sha256 "be22f014fbcd71d62de7da335c6dc0e20c54aa3ebadf85960787324166c0dbee"
 
     def install
       bin.install "spotify-tui"
+      bin.install_symlink "spotify-tui" => "spot"
     end
   end
 
   test do
-    system "#{bin}/spotify-tui", "--version"
+    system "#{bin}/spot", "--version"
   end
 end
