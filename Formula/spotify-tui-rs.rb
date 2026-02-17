@@ -1,16 +1,16 @@
 class SpotifyTuiRs < Formula
   desc "Brutalist terminal UI for Spotify on macOS (Rust)"
   homepage "https://github.com/Wondr-design/Spotify_tui-rust"
-  version "0.1.6"
+  version "0.1.7"
 
   on_arm do
-    url "https://github.com/Wondr-design/Spotify_tui-rust/releases/download/v0.1.6/spotify-tui-rs_darwin_arm64.tar.gz"
-    sha256 "1bada94fc8c6c7b83019c27e47d49368443f48e4a64d38e974a4561eab9e80b1"
+    url "https://github.com/Wondr-design/Spotify_tui-rust/releases/download/v0.1.7/spotify-tui-rs_darwin_arm64.tar.gz"
+    sha256 "934305697456fbd09346320a716d185504814e5036f0ea92098831b865af390c"
   end
 
   on_intel do
-    url "https://github.com/Wondr-design/Spotify_tui-rust/releases/download/v0.1.6/spotify-tui-rs_darwin_amd64.tar.gz"
-    sha256 "07dd891f675b9aca5191838d49b17507e19e8a81f3e0325e534c0ad2e5862875"
+    url "https://github.com/Wondr-design/Spotify_tui-rust/releases/download/v0.1.7/spotify-tui-rs_darwin_amd64.tar.gz"
+    sha256 "306ebd1c8ce05cf700eab83dbdd48ee6713d1b31609c36951adbd9a826933bb7"
   end
 
   def install
